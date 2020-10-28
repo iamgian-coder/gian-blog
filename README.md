@@ -91,4 +91,10 @@
 
 `npm run build && npm run start` or `yarn run build && yarn run start`
 
+## pm2 部署
+
+```bash
+bash start.sh
+```
+
 # 欢迎 😁start⭐~
