@@ -1,0 +1,50 @@
+@charset "utf-8";
+// 公用变量
+$maxWidth: 1200px;
+$gapSize: 8px;
+$fontSize: 16px;
+$bodyBgc: hsl(0, 0%, 0%); //#000
+$textColor: hsl(0, 100%, 100%); //#fff
+$linkColor: hsl(0, 0%, 100%); //#fff
+$keywordColor: hsl(0, 100%, 50%); //#f00
+$componentBgc: hsl(0, 0%, 8.2%); //#151515
+$beginColor: hsl(32.5, 100%, 50%); //#ff8a00
+$endColor: hsl(338, 77.9%, 53.9%); //#e52e71
+$borderColor: hsl(240, 7.3%, 51.4%); //#7a7a8c
+
+// header及其子组件变量
+$header-breakpoint-1: 419px;
+$header-breakpoint-2: 750px;
+$headerZIndex: 11;
+$headerHeight: 60px;
+$headerBgc: $componentBgc;
+$headerItemBottomLineHeight: 3px;
+$menuFS: 22px;
+$menuActiveBorderBottomHeight: 1px;
+$searchIconFS: 22px;
+$searchIconWidth: 2em;
+$formFS: 22px;
+$formHeight: 40px;
+$formBorderWidth: 1px;
+$formBorderRadius: 2em;
+$formSubmitWidth: 4em;
+
+// aside变量
+$aside-breakpoint-1: 900px;
+
+// post变量
+$postTitleFS: 18px;
+$postContentFS: 18px;
+$postContentColor: hsl(240, 7.3%, 51.4%); //#7a7a8c;
+$postMetaFS: 14px;
+$postTagBgc: rgba($postContentColor, 0.5);
+
+// main及其子组件变量
+$mainZIndex: $headerZIndex - 1;
+$asideZIndex: $mainZIndex + 1;
+$tipTtleFS: 18px;
+$tagTipActionBgc: $postTagBgc;
+$tagTipActionBtnFS: 12px;
+
+$toTopFS: 32px;
+$toTopZIndex: $asideZIndex - 1;
