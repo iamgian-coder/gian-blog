@@ -4,7 +4,7 @@
 
 # 欢迎 😁start⭐~
 
-## 首页/列表页效果图
+## 首页/列表页效果图(多图预警!!!😁)
 
 响应式
 ![gif效果图](screens/responsive.gif 'gif效果图')
