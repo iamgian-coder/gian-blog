@@ -8,6 +8,7 @@
           hsl(0, 0%, 8.2%)
         ),
         url('/img/demo.jpg');
+      background-position: center,-80px -80px;
     }
   </style>
 </template>

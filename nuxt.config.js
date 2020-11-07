@@ -33,7 +33,8 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/static/css/normalize.css', '@/assets/sass/base.scss'],
+  // css: ['@/static/css/normalize.css', '@/assets/sass/base.scss'],
+  css: ['@/assets/sass/base.scss'],
 
   pageTransition: {
     name: 'page',
@@ -102,7 +103,7 @@ export default {
   proxy: {
     '/api': {
       target: `http://${process.env.NUXT_ENV_API_HOST}:${process.env.NUXT_ENV_API_PORT}`,
-      pathRewrite: { '^/api': '' }
+      pathRewrite: { '^/api': '/' }
     }
   },
 
@@ -113,8 +114,11 @@ export default {
 
   markdownit: {
     preset: 'default',
-    linkify: true,
     breaks: true,
+    typographer: true,
+    linkify: false,
+    html: false,
+    xhtmlOut: false,
     highlight(str, lang) {
       const hljs = require('highlight.js');
       if (lang && hljs.getLanguage(lang)) {
@@ -124,7 +128,20 @@ export default {
         return ''; // use external default escaping
       }
     },
-    injected: true
+    injected: true,
+    use: [
+      [
+        'markdown-it-anchor',
+        {
+          level: 1,
+          permalink: true,
+          permalinkSymbol: '§',
+          permalinkBefore: true
+        }
+      ],
+      ['markdown-it-toc-done-right', { linkClass: 'nav-link-title' }],
+      'markdown-it-emoji'
+    ]
   },
 
   /*

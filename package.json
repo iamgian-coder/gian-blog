@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": {
     "name": "Gian",
-    "url": "http://49.233.155.73"
+    "url": "http://39.97.182.198"
   },
   "description": "Gian's blog",
   "private": true,
@@ -21,6 +21,9 @@
     "@nuxtjs/markdownit": "^1.2.10",
     "@nuxtjs/proxy": "^2.0.1",
     "highlight.js": "^10.3.2",
+    "markdown-it-anchor": "^6.0.0",
+    "markdown-it-emoji": "^2.0.0",
+    "markdown-it-toc-done-right": "^4.1.0",
     "nuxt": "^2.14.7",
     "randomstring": "^1.1.5",
     "vue-infinite-loading": "^2.4.5"

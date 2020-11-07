@@ -13,7 +13,7 @@
       <nuxt-link
         :to="`/article/${item._id}`"
         class="content"
-        v-html="item.markdown"
+        v-html="$md.render(item.markdown)"
       />
       <div class="meta">
         <div class="tags">
@@ -191,7 +191,7 @@ export default {
       overflow: hidden;
       font-size: $postContentFS;
       color: $postContentColor;
-      -webkit-line-clamp: 3;
+      -webkit-line-clamp: 5;
       -webkit-box-orient: vertical;
       word-break: break-word;
     }

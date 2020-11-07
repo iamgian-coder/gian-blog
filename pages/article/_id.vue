@@ -244,6 +244,20 @@ export default {
     transform: translateX(10px);
   }
 }
+.table-of-contents {
+  &::before {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    content: '文章目录';
+  }
+  .nav-link-title {
+    &:hover {
+      text-decoration: none !important;
+      @include textGradient;
+    }
+  }
+}
 .thearticle {
   position: relative;
   z-index: 2;
