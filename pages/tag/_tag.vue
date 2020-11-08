@@ -29,7 +29,7 @@
       <nuxt-link
         :to="`/article/${item._id}`"
         class="content"
-        v-html="$md.render(item.markdown)"
+        v-html="item.markdown"
       />
       <div class="meta">
         <div class="tags">
@@ -139,6 +139,12 @@ export default {
 
   validate(ctx) {
     return !!ctx.params.tag;
+  },
+
+  mounted() {
+    this.response.docs.forEach((doc) => {
+      doc.markdown = this.$md.render(doc.markdown);
+    });
   },
 
   methods: {

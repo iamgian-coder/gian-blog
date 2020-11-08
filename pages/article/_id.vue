@@ -244,20 +244,6 @@ export default {
     transform: translateX(10px);
   }
 }
-.table-of-contents {
-  &::before {
-    display: block;
-    font-size: 24px;
-    font-weight: bold;
-    content: '文章目录';
-  }
-  .nav-link-title {
-    &:hover {
-      text-decoration: none !important;
-      @include textGradient;
-    }
-  }
-}
 .thearticle {
   position: relative;
   z-index: 2;
@@ -265,6 +251,34 @@ export default {
   @include borderRadius;
   @include boxShadow;
   background-color: $componentBgc;
+  > .markdown-body {
+    .table-of-contents {
+      &::before {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        content: '文章目录';
+      }
+      ol,
+      dl,
+      ul {
+        counter-reset: item;
+      }
+      li {
+        display: block;
+        &::before {
+          content: counters(item, '.');
+          counter-increment: item;
+        }
+      }
+      .nav-link-title {
+        &:hover {
+          text-decoration: none !important;
+          @include textGradient;
+        }
+      }
+    }
+  }
   > .title {
     margin-bottom: 0;
   }

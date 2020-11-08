@@ -130,6 +130,7 @@ export default {
     },
     injected: true,
     use: [
+      'markdown-it-emoji',
       [
         'markdown-it-anchor',
         {
@@ -139,8 +140,7 @@ export default {
           permalinkBefore: true
         }
       ],
-      ['markdown-it-toc-done-right', { linkClass: 'nav-link-title' }],
-      'markdown-it-emoji'
+      ['markdown-it-toc-done-right', { linkClass: 'nav-link-title' }]
     ]
   },
 
