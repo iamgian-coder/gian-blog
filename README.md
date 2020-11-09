@@ -2,6 +2,11 @@
 
 ![nuxtjs](https://img.shields.io/badge/nuxt-2.14.7-brightgreen) ![markdown-it](https://img.shields.io/badge/%40nuxtjs%2Faxios-5.12.2-brightgreen) ![markdown-it](https://img.shields.io/badge/%40nuxtjs%2Fmarkdownit-1.2.10-brightgreen) ![markdown-it](https://img.shields.io/badge/%40nuxtjs%2Fproxy-2.0.1-brightgreen) ![highlight.js](https://img.shields.io/badge/highlight.js-10.3.2-brightgreen) ![vue-infinite-loading](https://img.shields.io/badge/vue--infinite--loading-10.3.2-brightgreen) ![vue-infinite-loading](https://img.shields.io/badge/node--sass-4.14.1-brightgreen)
 
+# 相关项目
+
+1. [gian-blog-admin 管理端站点](https://www.github.com/iamgian-coder/gian-blog-admin)
+2. [gian-blog-api 服务 API](https://www.github.com/iamgian-coder/gian-blog-api)
+
 # 关于本博客
 
 个人用来记录学习，工作
