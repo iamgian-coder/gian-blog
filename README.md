@@ -11,7 +11,7 @@
 
 个人用来记录学习，工作
 
-# 欢迎 😁start，fork，watch⭐~
+# 欢迎 😁star，fork，watch⭐~
 
 ## 首页/列表页效果图(多图预警!!!😁)
 
@@ -105,4 +105,4 @@
 bash start.sh
 ```
 
-# 欢迎 😁start，fork，watch⭐~
+# 欢迎 😁star，fork，watch⭐~
