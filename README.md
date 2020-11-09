@@ -74,7 +74,7 @@
 
 ## 开发步骤
 
-1. 安装本项目的依赖的 API 项目或者自行开发
+1. 安装本项目依赖的[API](https://www.github.com/iamgian-coder/gian-blog-api)
 2. 打开命令行终端并进入项目根目录
 3. 创建.env 文件 `cp .env.demo .env`
 4. 更新.env 文件中的环境变量：
