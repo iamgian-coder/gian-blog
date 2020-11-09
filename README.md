@@ -1,12 +1,17 @@
-# Gian 的个人博客
+# Gian 的个人博客，[线上地址 http://39.97.182.198](http://39.97.182.198)
 
-# [线上地址 http://39.97.182.198](http://39.97.182.198)
+![nuxtjs](https://img.shields.io/badge/nuxt-2.14.7-brightgreen) ![markdown-it](https://img.shields.io/badge/%40nuxtjs%2Faxios-5.12.2-brightgreen) ![markdown-it](https://img.shields.io/badge/%40nuxtjs%2Fmarkdownit-1.2.10-brightgreen) ![markdown-it](https://img.shields.io/badge/%40nuxtjs%2Fproxy-2.0.1-brightgreen) ![highlight.js](https://img.shields.io/badge/highlight.js-10.3.2-brightgreen) ![vue-infinite-loading](https://img.shields.io/badge/vue--infinite--loading-10.3.2-brightgreen) ![vue-infinite-loading](https://img.shields.io/badge/node--sass-4.14.1-brightgreen)
 
-# 欢迎 😁start⭐~
+# 关于本博客
+
+个人用来记录学习，工作
+
+# 欢迎 😁start，fork，watch⭐~
 
 ## 首页/列表页效果图(多图预警!!!😁)
 
 响应式
+
 ![gif效果图](screens/responsive.gif 'gif效果图')
 
 宽度<=419px
@@ -67,10 +72,12 @@
 - vue-infinite-loading
 - node-sass
 
-## 开发前的准备
+## 开发步骤
 
 1. 安装本项目的依赖的 API 项目或者自行开发
-2. 更新.env 文件中的环境变量：
+2. 打开命令行终端并进入项目根目录
+3. 创建.env 文件 `cp .env.demo .env`
+4. 更新.env 文件中的环境变量：
 
    NUXT_ENV_API_HOST=运行 API 的主机 IP
 
@@ -80,12 +87,8 @@
 
    CLIENT_SECRET=API 端配置的客户端密钥
 
-## 开发步骤
-
-1. 打开命令行终端并进入项目根目录
-2. 创建.env 文件 `cp .env.demo .env` 并设置环境变量的值
-3. 安装项目依赖 `npm i` or `yarn`
-4. 开始开发 `npm run dev` or `yarn run dev`
+5. 安装项目依赖,终端里运行 `npm i` or `yarn`
+6. 开始吧 😁,终端里运行 `npm run dev` or `yarn run dev`
 
 ## 生产模式下运行
 
@@ -97,4 +100,4 @@
 bash start.sh
 ```
 
-# 欢迎 😁start⭐~
+# 欢迎 😁start，fork，watch⭐~
