@@ -136,9 +136,6 @@ export default {
         'markdown-it-anchor',
         {
           level: 1
-          // permalink: false,
-          // permalinkSymbol: '§',
-          // permalinkBefore: true
         }
       ],
       ['markdown-it-toc-done-right', { linkClass: 'nav-link-title' }]
