@@ -37,12 +37,12 @@ export default {
     toggleBacktop() {
       const scrollTop =
         document.documentElement.scrollTop || document.body.scrollTop;
-      const toTopClass = document.getElementById('backtop').classList;
+      const target = document.getElementById('backtop');
+      let classNameString = 'icon';
       if (scrollTop >= 500) {
-        toTopClass.add('active');
-      } else {
-        toTopClass.remove('active');
+        classNameString += ' active';
       }
+      target.setAttribute('class', classNameString);
     },
 
     scrollYTo(position) {

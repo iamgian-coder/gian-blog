@@ -340,4 +340,30 @@ export default {
     }
   }
 }
+
+/* IE9 , IE10 ,IE11 rule sets go here */
+@media screen and (min-width: 0\0) {
+  .app > .main-aside-container {
+    #aside {
+      > .hot-articles {
+        > .articles {
+          > .post {
+            &:hover {
+              > .item {
+                > .title {
+                  background-image: none !important;
+                  background-clip: unset !important;
+                }
+              }
+            }
+          }
+        }
+      }
+      > .tags-container {
+        position: relative;
+        top: 0 !important;
+      }
+    }
+  }
+}
 </style>

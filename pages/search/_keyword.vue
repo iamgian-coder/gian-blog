@@ -176,6 +176,19 @@ export default {
 </script>
 
 <style lang="scss">
+/* IE9 , IE10 ,IE11 rule sets go here */
+@media screen and (min-width: 0\0) {
+  .search-container {
+    > .article {
+      &:hover {
+        > .title {
+          background-image: none !important;
+          background-clip: unset !important;
+        }
+      }
+    }
+  }
+}
 .search-container {
   > .searchTip {
     margin-bottom: $gapSize * 2;

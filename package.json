@@ -42,7 +42,8 @@
     "sass-loader": "^9.0.3",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
+    "vconsole": "^3.3.4"
   },
   "keywords": [
     "blog",

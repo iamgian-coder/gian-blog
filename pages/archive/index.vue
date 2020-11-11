@@ -104,6 +104,25 @@ export default {
 </script>
 
 <style lang="scss">
+/* IE9 , IE10 ,IE11 rule sets go here */
+@media screen and (min-width: 0\0) {
+  .archive-container {
+    > .year {
+      > .mds {
+        > .d {
+          &:hover {
+            > .c {
+              > .title {
+                background-image: none !important;
+                background-clip: unset !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .archive-container {
   padding: $gapSize * 2;
   border-radius: 8px;

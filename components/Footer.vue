@@ -32,6 +32,11 @@
       line-height: 1.8;
       > a {
         @include textGradient;
+        /* IE9 , IE10 ,IE11 rule sets go here */
+        @media screen and (min-width: 0\0) {
+          background-image: none !important;
+          background-clip: unset !important;
+        }
       }
     }
   }

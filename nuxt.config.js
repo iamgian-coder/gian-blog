@@ -48,7 +48,8 @@ export default {
   plugins: [
     { src: '~/plugins/inject-apiPath.js' },
     { src: '~/plugins/register-axiosInterceptors.js' },
-    { src: '~/plugins/register-infiniteLoading.js', mode: 'client' }
+    { src: '~/plugins/register-infiniteLoading.js', mode: 'client' },
+    { src: '~/plugins/vconsole.js', mode: 'client' }
   ],
 
   loading: {
@@ -134,10 +135,10 @@ export default {
       [
         'markdown-it-anchor',
         {
-          level: 1,
-          permalink: true,
-          permalinkSymbol: '§',
-          permalinkBefore: true
+          level: 1
+          // permalink: false,
+          // permalinkSymbol: '§',
+          // permalinkBefore: true
         }
       ],
       ['markdown-it-toc-done-right', { linkClass: 'nav-link-title' }]
@@ -162,5 +163,10 @@ export default {
         });
       }
     }
+  },
+
+  server: {
+    host: '0.0.0.0',
+    port: 3000
   }
 };
