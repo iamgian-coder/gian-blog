@@ -32,53 +32,53 @@
 
 响应式
 
-![gif效果图](http://39.97.182.198:8080/screens/responsive.gif 'gif效果图')
+![gif效果图](./screens/responsive.gif 'gif效果图')
 
 宽度<=419px
 
-![lte419效果图](http://39.97.182.198:8080/screens/lte419.png 'lte419效果图')
+![lte419效果图](./screens/lte419.png 'lte419效果图')
 
 ---
 
 420px=<宽度<=749px
 
-![420to749效果图](http://39.97.182.198:8080/screens/420to749.png '420to749效果图')
+![420to749效果图](./screens/420to749.png '420to749效果图')
 
 ---
 
 750px=<宽度<=899px
 
-![750to899效果图](http://39.97.182.198:8080/screens/750to899.png '750to899效果图')
+![750to899效果图](./screens/750to899.png '750to899效果图')
 
 ---
 
 宽度>=900px
 
-![gte900效果图](http://39.97.182.198:8080/screens/gte900.png 'gte900效果图')
+![gte900效果图](./screens/gte900.png 'gte900效果图')
 
 ---
 
 ## 归档页效果图
 
-![归档页效果图](http://39.97.182.198:8080/screens/archive.png '归档页效果图')
+![归档页效果图](./screens/archive.png '归档页效果图')
 
 ---
 
 ## 标签页效果图
 
-![标签页效果图](http://39.97.182.198:8080/screens/tag.png '标签页效果图')
+![标签页效果图](./screens/tag.png '标签页效果图')
 
 ---
 
 ## 查询页效果图
 
-![查询页效果图](http://39.97.182.198:8080/screens/search.png '查询页效果图')
+![查询页效果图](./screens/search.png '查询页效果图')
 
 ---
 
 ## 详情页效果图
 
-![详情页效果图](http://39.97.182.198:8080/screens/details.gif '详情页效果图')
+![详情页效果图](./screens/details.gif '详情页效果图')
 
 ---
 
