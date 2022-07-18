@@ -1,68 +1,121 @@
-# gian-blog
+# Gian 的个人博客，[线上地址 http://123.56.189.213/](http://123.56.189.213)
 
-## Build Setup
+![nuxtjs](https://img.shields.io/badge/nuxt-2.14.7-brightgreen) ![markdown-it](https://img.shields.io/badge/%40nuxtjs%2Faxios-5.12.2-brightgreen) ![markdown-it](https://img.shields.io/badge/%40nuxtjs%2Fmarkdownit-1.2.10-brightgreen) ![markdown-it](https://img.shields.io/badge/%40nuxtjs%2Fproxy-2.0.1-brightgreen) ![highlight.js](https://img.shields.io/badge/highlight.js-10.3.2-brightgreen) ![vue-infinite-loading](https://img.shields.io/badge/vue--infinite--loading-10.3.2-brightgreen) ![vue-infinite-loading](https://img.shields.io/badge/node--sass-4.14.1-brightgreen)
+
+欢迎 😁star，fork，watch⭐~
+
+- [Gian 的个人博客，线上地址 http://123.56.189.213](#gian-的个人博客线上地址)
+  - [相关项目](#相关项目)
+  - [关于本博客](#关于本博客)
+  - [首页/列表页效果图(多图预警!!!😁)](#首页列表页效果图多图预警)
+  - [归档页效果图](#归档页效果图)
+  - [标签页效果图](#标签页效果图)
+  - [查询页效果图](#查询页效果图)
+  - [详情页效果图](#详情页效果图)
+  - [技术栈](#技术栈)
+  - [开发步骤](#开发步骤)
+  - [生产模式下运行](#生产模式下运行)
+  - [pm2 部署](#pm2-部署)
+
+## 相关项目
+
+1. [gian-blog-admin 管理端站点](https://www.github.com/iamgian-coder/gian-blog-admin)
+2. [gian-blog-api 服务 API](https://www.github.com/iamgian-coder/gian-blog-api)
+
+## 关于本博客
+
+个人用来记录学习，工作
+
+## 首页/列表页效果图(多图预警!!!😁)
+
+响应式
+
+![gif效果图](http://123.56.189.213/static/responsive.gif 'gif效果图')
+
+宽度<=419px
+
+![lte419效果图](http://123.56.189.213/static/lte419.png 'lte419效果图')
+
+---
+
+420px=<宽度<=749px
+
+![420to749效果图](http://123.56.189.213/static/420to749.png '420to749效果图')
+
+---
+
+750px=<宽度<=899px
+
+![750to899效果图](http://123.56.189.213/static/750to899.png '750to899效果图')
+
+---
+
+宽度>=900px
+
+![gte900效果图](http://123.56.189.213/static/gte900.png 'gte900效果图')
+
+---
+
+## 归档页效果图
+
+![归档页效果图](http://123.56.189.213/static/archive.png '归档页效果图')
+
+---
+
+## 标签页效果图
+
+![标签页效果图](http://123.56.189.213/static/tag.png '标签页效果图')
+
+---
+
+## 查询页效果图
+
+![查询页效果图](http://123.56.189.213/static/search.png '查询页效果图')
+
+---
+
+## 详情页效果图
+
+![详情页效果图](http://123.56.189.213/static/details.gif '详情页效果图')
+
+---
+
+## 技术栈
+
+- nuxtjs(ssr)
+- @nuxtjs/axios
+- @nuxtjs/markdownit
+- @nuxtjs/proxy
+- highlight.js
+- vue-infinite-loading
+- sass
+
+## 开发步骤
+
+1. 安装本项目依赖的[API](https://www.github.com/iamgian-coder/gian-blog-api)
+2. 打开命令行终端并进入项目根目录
+3. 创建.env 文件 `cp .env.demo .env`
+4. 更新.env 文件中的环境变量：
+
+   NUXT_ENV_API_HOST=运行 API 的主机 IP
+
+   NUXT_ENV_API_PORT=API 运行端口
+
+   CLIENT_ID=API 端配置的客户端编号
+
+   CLIENT_SECRET=API 端配置的客户端密钥
+
+5. 安装项目依赖,终端里运行 `npm i` or `yarn`
+6. 开始吧 😁,终端里运行 `npm run dev` or `yarn run dev`
+
+## 生产模式下运行
+
+`npm run build && npm run start` or `yarn run build && yarn run start`
+
+## pm2 部署
 
 ```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+bash start.sh
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+再次欢迎 😁star，fork，watch⭐~
